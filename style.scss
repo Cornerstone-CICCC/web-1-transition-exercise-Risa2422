@@ -10,3 +10,35 @@
     opacity: 0;
   }
 }
+
+.task3 {
+  margin: 100px auto;
+  width: 250px;
+  height: 50px;
+  background-color: rgb(137, 140, 126);
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    animation: animation1 2s infinite;
+  }
+}
+
+@keyframes animation1 {
+  0% {
+    width: 0%;
+    transform: translateX(0, -50%);
+  }
+
+  100% {
+    width: 100%;
+    transform: translateX(0%, 0%);
+    background-color: rgb(168, 238, 182);
+  }
+}

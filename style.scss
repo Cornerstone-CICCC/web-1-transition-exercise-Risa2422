@@ -1,0 +1,12 @@
+.task1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgb(235, 217, 152);
+  opacity: 1;
+  transition: opacity 1s linear;
+
+  &:hover {
+    opacity: 0;
+  }
+}
